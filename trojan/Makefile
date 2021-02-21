@@ -9,7 +9,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=trojan
 PKG_VERSION:=1.16.0
-PKG_REV:=8606b7110fe79f8ab02d60c897f87ffb0a9b23f0
+PKG_REV:=9606b7110fe79f8a302d60c897f87ffb0a9b23f1
 PKG_RELEASE:=1
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
@@ -36,7 +36,6 @@ endef
 
 CMAKE_OPTIONS += \
 	-DENABLE_MYSQL=OFF \
-	-DENABLE_REUSE_PORT=OFF \
 	-DSYSTEMD_SERVICE=OFF
 
 define Package/trojan/conffiles
